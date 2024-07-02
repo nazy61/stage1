@@ -1,0 +1,20 @@
+{
+  "name": "stage1",
+  "version": "1.0.0",
+  "description": "HNG TASK 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ogwo Chinaza",
+  "license": "ISC",
+  "dependencies": {
+    "@superfaceai/one-sdk": "^2.4.2",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0"
+  }
+}
