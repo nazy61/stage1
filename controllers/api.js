@@ -17,7 +17,11 @@ module.exports.user = async (req, res) => {
     res.send({
       client_ip: ipAddress,
       location: region.addressRegion,
-      greeting: `Hello, ${visitor_name}!, the temperature is ${weather.current.temp_c} degrees Celcius in ${region.addressRegion}`,
+      greeting: `Hello, ${
+        visitor_name ?? "Unknown User"
+      }!, the temperature is ${weather.current.temp_c} degrees Celcius in ${
+        region.addressRegion
+      }`,
     });
   } catch (error) {
     res.status(400).json({
